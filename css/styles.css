@@ -8,7 +8,6 @@
   --badge-font-color: #ffffff;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
 
-  --main-background-color: #ffffff;
   --accent-background-color: #2f303a;
   --badge-background-color: #f5f4fa;
 }
@@ -24,12 +23,16 @@ body {
 
 .list {
   list-style: none;
+  padding-left: 0px;
+  /* display: flex;
+  justify-content: center; */
 }
 
 /* logo */
 
 .logo,
-.logo-part {
+.logo-part,
+.logo-footer {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -77,6 +80,8 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* main */
+
 /* hero */
 .hero {
   background-color: var(--accent-background-color);
@@ -91,8 +96,15 @@ body {
   letter-spacing: 0.06em;
 }
 
-/* .button {
-} */
+.button {
+  background-color: var(--accent-color);
+  color: var(--badge-font-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
 
 .section-title {
   font-weight: 700;
@@ -102,6 +114,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-font-color);
 }
+
+/* features */
 
 .feature-list .title {
   font-weight: 700;
@@ -118,4 +132,44 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-font-color);
+}
+
+/* skills */
+
+/* .skills {} */
+
+/* team */
+
+.team {
+  background-color: var(--badge-background-color);
+}
+
+/* footer */
+
+.logo-footer {
+  color: var(--badge-font-color);
+}
+
+.footer {
+  background-color: var(--accent-background-color);
+}
+
+.address .link {
+  color: var(--footer-contacts-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.address .link-address {
+  color: var(--badge-font-color);
+}
+
+.feature-list,
+.skills-list,
+.team-list {
+  display: flex;
+  justify-content: center;
 }
